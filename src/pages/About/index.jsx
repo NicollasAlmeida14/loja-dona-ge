@@ -18,7 +18,7 @@ import { motion } from 'framer-motion'
 
 import { useInView } from 'react-intersection-observer'
 
-import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
 function About() {
 
@@ -53,7 +53,7 @@ function About() {
                 animate={inViewInfo ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.8 }}
             >
-                <img src={Logo} />
+                <img src={Logo} alt='logo-dona-ge' />
 
                 <div>
                     <Subtitle>Conheça mais sobre nós!</Subtitle>
@@ -107,7 +107,7 @@ function About() {
                 animate={inViewFounder ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.8 }}
             >
-                <img src={Founder} />
+                <img src={Founder} alt='fundadora-dona-ge' />
 
                 <div>
                     <Subtitle>Conheça nossa fundadora!</Subtitle>

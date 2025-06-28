@@ -99,7 +99,7 @@ function Products() {
                                 <ProductsCards onClick={() => navigate(`/produtos/${product.id}`)}>
                                     <ProductImage
                                         src={product.thumbnail}
-                                        loading='lazy'
+                                        alt={product.name}
                                     />
                                     <ProductName>{product.name}</ProductName>
                                     <ProductDescription>{product.description}</ProductDescription>

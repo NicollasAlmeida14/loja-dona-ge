@@ -14,7 +14,7 @@ import {
     Subtitle
 } from './styles'
 
-import { useState, useContext } from "react"
+import { useState, useContext } from 'react'
 
 import DefaultHeader from '../../components/Header'
 import DefaultFooter from '../../components/Footer'
@@ -59,7 +59,6 @@ function ProductDetails() {
                     <ProductImage
                         src={imageToShow}
                         alt={nametoShow}
-                        loading='lazy'
                     />
                     <ProductDescription>{descriptionToShow}</ProductDescription>
                     <ProductPrice>{formatCurrency(product.price)}</ProductPrice>
@@ -80,9 +79,8 @@ function ProductDetails() {
                             {product.variations.map((variation) => (
                                 <OptionsPrintImage
                                     key={variation.id}
-                                    src={variation.thumbnail}
+                                    src={variation.thumbnail} alt={variation.print}
                                     onClick={() => setSelectedVariation(variation)}
-                                    loading='lazy'
                                 />
 
                             ))}
