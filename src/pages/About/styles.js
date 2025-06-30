@@ -9,6 +9,7 @@ export const Container = styled.div`
 
   @media (max-width: 945px) {
     align-items: center;
+    overflow-x: hidden;
   }
 `
 
@@ -66,7 +67,7 @@ export const ContactsContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  gap: 2rem;
+  gap: 2rem;;
 
   h2{
     position: absolute;
